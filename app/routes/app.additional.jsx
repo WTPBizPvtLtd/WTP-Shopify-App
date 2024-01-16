@@ -77,13 +77,6 @@ export const action = async ({ request, checkedStatus }) => {
     return null;
    };
 
-
-
-
-
-
-   
-   
    
 
 export default function Index() {

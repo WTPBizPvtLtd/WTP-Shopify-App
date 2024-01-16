@@ -104,6 +104,7 @@ export default function App() {
         </Link>
         {/* <Link to="/app/iframe">Editor</Link> */}
         <Link to="/app/settings">Settings</Link>
+        <Link to="/app/api">API</Link>
         {/* <Link to="/app/dashboard">Dashboard</Link> */}
         {/* <Link to="/app/prisma">Prisma</Link>
         <Link to="/app/subscription">Subscription</Link> */}

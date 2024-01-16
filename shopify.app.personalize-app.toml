@@ -2,7 +2,7 @@
 
 name = "Personalize App"
 client_id = "45f0330e50c8c2f1643d410463277fc5"
-application_url = "https://violence-fairly-nominations-sk.trycloudflare.com"
+application_url = "https://robert-around-cosmetics-entry.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,write_script_tags,read_products"
 
 [auth]
 redirect_urls = [
-  "https://violence-fairly-nominations-sk.trycloudflare.com/auth/callback",
-  "https://violence-fairly-nominations-sk.trycloudflare.com/auth/shopify/callback",
-  "https://violence-fairly-nominations-sk.trycloudflare.com/api/auth/callback"
+  "https://robert-around-cosmetics-entry.trycloudflare.com/auth/callback",
+  "https://robert-around-cosmetics-entry.trycloudflare.com/auth/shopify/callback",
+  "https://robert-around-cosmetics-entry.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
@@ -25,6 +25,3 @@ embedded = false
 [build]
 automatically_update_urls_on_dev = true
 dev_store_url = "designtool678.myshopify.com"
-
-
-

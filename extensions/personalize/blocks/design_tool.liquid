@@ -33,47 +33,32 @@
 {% assign product_id = product.id %}
 
 {% if product.metafields.design.design == true %}
-  <button id="customButtonDesign" data-product-id="{{ product_id }}">{{ block.settings.designbtnlabel }}</button>
+  <button id="customButtonDesign" data-product-id="{{ product.id }}">{{ block.settings.designbtnlabel }}</button>
+  <div id="productInfo"></div> <!-- Container to display product info -->
 {% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.getElementById('customButtonDesign');
+    var productId = button.getAttribute('data-product-id');
+
+    button.addEventListener('click', function() {
+        fetch(`http://localhost:4000/api/product/${productId}`)
+            .then(response => response.json())
+            .then(data => {
+                var productInfoDiv = document.getElementById('productInfo');
+                productInfoDiv.innerHTML = '<p>' + JSON.stringify(data) + '</p>';
+            })
+            .catch(error => console.error('Error fetching product:', error));
+    });
+});
+</script>
+
 
 {% if product.metafields.template.template == true %}
   <button id="customButtonTemplate" data-product-id="{{ product_id }}">{{ block.settings.templatebtnlabel }}</button>
 {% endif %}
 
-
-<div id="fullPagePopup">
-    <div class="popup-content">
-        <p>Your popup content here</p>
-        <button onclick="closePopup()">Close</button>
-    </div>
-</div>
-
-<script>
-    document.getElementById("customButtonDesign").onclick = function() {
-        document.getElementById("fullPagePopup").style.display = "block";
-    }
-
-    function closePopup() {
-        document.getElementById("fullPagePopup").style.display = "none";
-    }
-
-var productId = {{ product.id }};
-    async function loadProductData(productId) {
-  try {
-    const response = await fetch(`/api/product/${productId}`);
-    const productData = await response.json();
-    renderProduct(productData);
-  } catch (error) {
-    console.error('Error fetching product data:', error);
-  }
-}
-
-// Call this function with the appropriate product ID when the editor loads
-loadProductData(productId);
-</script>
-
-
-console.log()
 
 
 

@@ -36,7 +36,7 @@
     "@shopify/shopify-app-remix": "^2.2.0",
     "@shopify/shopify-app-session-storage-prisma": "^2.0.0",
     "aws-sdk": "^2.1525.0",
-    "axios": "^1.6.2",
+    "axios": "^1.6.5",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",

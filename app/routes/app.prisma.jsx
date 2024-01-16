@@ -36,7 +36,9 @@ export const loader = async ({ request }) => {
 
   // console.log("allProducts", personalizedData);
   
-  await prisma.$disconnect();
+  await prisma.$disconnect(
+    
+  );
   return personalizedData;
 };
 
