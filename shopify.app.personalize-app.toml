@@ -2,7 +2,7 @@
 
 name = "Personalize App"
 client_id = "45f0330e50c8c2f1643d410463277fc5"
-application_url = "https://robert-around-cosmetics-entry.trycloudflare.com"
+application_url = "https://flows-taxation-landing-chris.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,write_script_tags,read_products"
 
 [auth]
 redirect_urls = [
-  "https://robert-around-cosmetics-entry.trycloudflare.com/auth/callback",
-  "https://robert-around-cosmetics-entry.trycloudflare.com/auth/shopify/callback",
-  "https://robert-around-cosmetics-entry.trycloudflare.com/api/auth/callback"
+  "https://flows-taxation-landing-chris.trycloudflare.com/auth/callback",
+  "https://flows-taxation-landing-chris.trycloudflare.com/auth/shopify/callback",
+  "https://flows-taxation-landing-chris.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
